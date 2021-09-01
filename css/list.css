@@ -1,0 +1,79 @@
+.list-form input{
+    display:block;
+}
+.list{
+    overflow-x:hidden ; 
+}
+.list-form{
+    padding:25px; 
+}
+.list-form label{
+    margin:15px;
+    font-size:20px;
+}
+.list-form input[type = 'text'] , .list-form input[type = 'file'] , .list-form input[type = 'date'] , .list-form input[type = 'number']{
+    margin:15px;
+    width:100% ; 
+    font-size:20px ;
+    border-radius:6px ;
+    padding:2px ;
+}
+fieldset{
+    padding:25px ;
+    margin:10px;
+}
+legend{
+    border:2px solid black ;
+    padding:7px;
+    font-size:25px;
+}
+.button{
+    display:flex ; 
+    justify-content: flex-end;
+    align-items: center;
+}
+.list-form input[type = 'submit']{
+    padding:10px 35px ; 
+    color:white ;
+    background-color: #1b1b1b ; 
+    border:none ; 
+    font-weight: bolder;
+    border-radius: 10px ;
+    font-size:15px; 
+    transition:0.2s ; 
+    cursor:pointer ; 
+    margin:5px ;
+}
+.list-form input[type = 'submit']:hover{
+    /* background-color: white ; */
+    box-shadow:2px 2px 10px black ; 
+}
+.list-form .radio{
+    display: flex;
+    margin:15px 0px 15px 0px  ; 
+}
+.list-form .radio label{
+    margin:0px ;
+    padding:0px 10px 5px 10px;
+}
+.radio-input{
+    display: flex;
+}
+
+@media all and (max-width:700px ){
+    .list-form .radio{
+        display:block ;
+        padding:10px ;
+    }
+
+    .radio-input{
+        margin:10px ;
+    }
+    .radio-input input{
+        justify-self: center;
+        align-self: center;
+    }
+    .list-form input[type = 'text'] , .list-form input[type = 'file'] , .list-form input[type = 'date'] , .list-form input[type = 'number']{
+        font-size:15px ;
+    }
+}

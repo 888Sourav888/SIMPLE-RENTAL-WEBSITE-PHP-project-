@@ -1,0 +1,92 @@
+.properties h1 , .requests h1{
+    border-bottom: 3px solid rgb(5, 197, 197) ; 
+    padding:15px; 
+
+}
+body{
+    overflow-x:hidden ; 
+}
+.properties , .requests{
+    min-height:400px ;
+}
+.noprop , .norequests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.noprop h2 , .norequests h2{
+    font-size:20px ;
+}
+.noprop a{
+    text-decoration: none;
+    background-color: #1b1b1b;
+    color:white ; 
+    padding:15px ;
+    cursor: pointer;
+    transition:0.2s ; 
+    border-radius  : 15px ;
+    margin:25px;
+}
+.noprop a:hover{
+    background-color:white ; 
+    color:black ; 
+    border:2px solid black;
+}
+.box input{
+    display:block ;
+}
+
+.box img{
+    height: 100px ;
+    width:100px ;
+}
+.box-content{
+    margin:15px; 
+    padding:10px;
+}
+.box th, td{
+    text-align: center;
+    padding:15px;
+}
+
+table{
+    margin:15px;
+    width:100% ; 
+}
+.requests input{
+    display:block ;
+}
+.box input[type = 'submit']{
+    padding:8px 15px 8px 15px ; ;
+    color:white ;
+    background-color: red; 
+    border:none ; 
+    border-radius: 10px ;
+    font-size:15px; 
+    transition:0.2s ; 
+    cursor:pointer ; 
+}
+.box input[type = 'submit']:hover{
+    box-shadow:2px 2px 10px black ; 
+}
+.seeprop input[type = 'submit'] , .seedetail input[type='submit']{
+    background-color: #1b1b1b;
+}
+#accept{
+    background-color: rgb(7, 180, 180);
+}
+
+@media all and (max-width:800px){
+    #medis{
+        display:none ; 
+    }
+    td{
+        font-size:15px 
+    }
+    .box input[type = 'submit']{
+        font-size:16px ;
+        padding:5px ;
+    }
+}

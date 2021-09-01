@@ -1,0 +1,48 @@
+.footer{
+    background-color: #1b1b1b;
+    color:white ; 
+    margin-top:40px ;
+}
+.footer img{
+    width:25px ; 
+    height: 25px;
+}
+.footer ul{
+    list-style-type:none ;
+}
+.footer ul li{
+    margin:10px ;
+}
+.footer ul a{
+    text-decoration:none; 
+    color:white ; 
+}
+.footer ul a:hover{
+    color:cyan ;
+}
+.box1 , .box2{
+    display:flex ; 
+    justify-content: center;
+    align-items:center ; 
+}
+.box1 .col1 , .box1 .col2{
+    margin:25px ;
+}
+.allrights{
+    display:flex ;
+}
+.allrights p{
+    border:white ;
+    font-size:15px ;
+}
+@media all and (max-width: 968px){
+    .footer ul li a{
+        display:block ;
+    }
+    .footer ul li{
+        display: block;
+    }
+    .footer ul{
+        display:block ;
+    }
+}

@@ -1,0 +1,193 @@
+.search-filter input{
+    display:block ;
+}
+nav ul ul{
+    z-index:1000 ; 
+}
+.search-filter .search{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border:1px solid black ;
+    border-left:0  ; 
+    border-right:0 ; 
+    position: sticky;
+    top:0 ; 
+    left:0 ; 
+    z-index: 20; 
+    background-color: white;
+}
+.search-filter .search form{
+    display:flex;  
+    justify-content: center;
+    width:100%;
+    padding:5px;
+}
+.search-filter .search form input[type = 'text']{
+    line-height: 15px;
+    width: 50% ; 
+    height:35px;
+    font-size:20px ; 
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px ;
+    outline:none ;
+    padding:10px;
+    
+}
+.search-filter .search form input[type = 'submit']{
+    line-height:15px ;
+    width:12% ; 
+    height:35px;
+    font-size:15px ; 
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius:25px ;
+    cursor: pointer;
+    background-color:black ;
+    color:white ; 
+    border:none ; 
+}
+.search-filter .search form input[type = 'submit']:hover{
+    color:cyan ; 
+}
+.rent-filter{
+    max-width:500px; 
+}
+.rent-display{
+    display: flex;
+    
+}
+.rent-filter h3{
+    text-align: center;
+}
+.tenant div , .furnish div ,.price-range div{
+    display: flex;
+    margin:10px;
+}
+.rent-filter form{
+    padding:15px;
+}
+.tenant , .furnish , .price-range ,.rent-submit{
+    padding:15px ;
+    border:2px solid black;
+}
+.tenant  span, .furnish  span, .price-range span{
+    margin:2px;
+}
+.rent-submit{
+    display:flex ;
+    justify-content: center;
+}
+.rent-submit input[type = 'submit']{
+    line-height:15px ;
+    width:50% ;
+    height: 35px;
+    font-size:15px ; 
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:black ;
+    color:white ; 
+    border:none ; 
+}
+.rent-items-display{
+    padding:25px;
+    width:100% ;
+}
+.rent-items{
+    width:100% ;
+    display:flex ;
+    padding: 15px;
+    border:none; 
+    background-color: #f2f2f2;
+    border-radius:25px;
+    box-shadow: 3px 3px 16px grey;
+    margin:15px;
+   
+}
+
+.rent-items-image img{
+    width:200px ;
+    height:150px;
+}
+.rent-items-info{
+    display:flex ; 
+    flex-direction: column;
+    width:100% ; 
+}
+.rent-items-info .border{
+    border:2px solid black;
+    margin:15px
+}
+.info1 , .info2{
+    display: flex;
+    justify-content: space-around;
+    width:100% ;
+    flex-grow: 1;
+    padding:15px;
+    font-size: 18px;
+}
+.moreinfo {
+    display:  flex;
+    justify-content: flex-end;
+}
+.moreinfo input[type = 'submit'] , .moreinfo a{
+    margin-right:15px ;
+    background-color: black;
+    color:white ;
+    height: 35px;
+    padding:1px 10px 1px 10px;
+    border-radius:10px;
+    border:none ; 
+    cursor: pointer;
+}
+.moreinfo a{
+    text-decoration : none ; 
+    line-height: 35px;
+}
+.moreinfo input[type = 'submit']:hover , .moreinfo a:hover{
+    color:cyan;
+}
+.visited p{
+    font-size:18px ; 
+    color:rgb(11, 59, 59);  
+    margin:5px ;
+}
+.visited{
+    display:flex ; 
+    margin:10px ;
+    flex-wrap:wrap ; 
+    justify-content:center ; 
+    align-items: center ; 
+}
+.visited form{
+    margin:5px ;
+}
+.visited input[type = 'submit']{
+    padding:8px 15px 8px 15px ; ;
+    color:white ;
+    background-color: black; 
+    border:none ; 
+    border-radius: 10px ;
+    font-size:15px; 
+    transition:0.2s ; 
+    cursor:pointer ; 
+}
+.visited input[type = 'submit']{
+    box-shadow:2px 2px 10px black ; 
+}
+@media all and (max-width:800px){
+    .rent-filter{
+        display: none;
+    }
+    .search-filter .search form input[type = 'text'],.search-filter .search form input[type = 'submit']{
+        font-size:15px ;
+    }
+    .info1 , .info2{
+        font-size:15px ;
+    }
+}
+@media all and (max-width:550px){
+    .rent-items-image img{
+        display:none ;
+    }
+
+}

@@ -1,0 +1,76 @@
+.details-display h1{
+    border-bottom: 3px solid rgb(5, 197, 197) ; 
+    padding:15px; 
+}
+.details-display input{
+    display: block;
+}
+
+.display-content{
+    display:flex ;
+    padding:25px ;
+    font-size:18px ;
+    justify-content: space-around;
+}
+.display-content img{
+    height: 400px ;
+    width: 400px;
+    border:2px solid black ; 
+    padding:15px; 
+}
+.upload-form{
+    display:flex ; 
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    margin:10px ;
+}
+.upload-form input[type='submit'] , .edit input[type = 'submit'] , .changepass input[type = 'submit'] ,.edit-form input[type = 'submit'] ,.pass-form input[type = 'submit'] , .remove-photo input[type = 'submit']{
+    padding:8px 15px 8px 15px ; ;
+    color:white ;
+    background-color: rgb(18, 172, 172); 
+    border:none ; 
+    font-weight: bolder;
+    border-radius: 10px ;
+    font-size:15px; 
+    transition:0.2s ; 
+    cursor:pointer ; 
+    margin:5px ;
+}
+.changepass input[type = 'submit']{
+    background-color: #1b1b1b;
+}
+.remove-photo input[type = 'submit']{
+    background-color:red ; 
+}
+.upload-form input[type='submit']:hover , .edit input[type = 'submit']:hover , .changepass input[type = 'submit']:hover , .edit-form input[type = 'submit']:hover , .pass-form input[type = 'submit']:hover , .remove-photo input[type = 'submit']{
+    box-shadow:2px 2px 10px black ; 
+}
+.edit-form label{
+    font-size:20px;  
+}
+.edit-form,.pass-form{
+    width:100% ; 
+    padding:25px ;
+}
+.edit-form input[type = 'text'] , .edit-form input[type = 'date'],.pass-form input[type  ='password']{
+    width:75% ; 
+    padding:5px ; 
+    font-size:20px ; 
+    margin:10px ;
+}
+.editsubmit , .passsubmit{
+    display:flex; 
+    justify-content: center; 
+    padding:10px ;
+}
+
+@media all and (max-width:968px){
+    .display-content{
+        flex-direction:column;
+    }
+    .box1 , .box2{
+        margin:20px ; 
+    }
+}

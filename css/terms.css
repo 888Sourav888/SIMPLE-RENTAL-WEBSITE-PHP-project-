@@ -1,0 +1,21 @@
+.terms-display h1{
+    border-bottom: 3px solid rgb(5, 197, 197) ; 
+    padding:15px; 
+    margin:10px;
+}
+.display-content{
+    padding:25px ; 
+}
+
+.terms-display h2{
+    margin:10px ;
+    text-decoration: underline;
+    text-decoration-color: rgb(5, 197, 197) ; 
+    
+}
+.terms-display p{
+    padding:15px ;
+}
+.terms-display ul{
+    padding:10px 50px 10px 50px ;
+}

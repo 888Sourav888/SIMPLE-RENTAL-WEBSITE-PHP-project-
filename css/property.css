@@ -1,0 +1,134 @@
+.prop{
+    min-height: 100vh;
+}
+.slider{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+}
+.imageslider-display{
+    height: 400px;
+    width: 750px;
+    border:2px solid black ;
+    padding:5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+.owner-details table td{
+    font-size:20px ; 
+    padding:15px; 
+    text-align: center;
+    margin:5px ;
+}
+.owner-details table{
+    margin:25px ;
+}
+.owner{
+    padding:25px; 
+    display:flex ; 
+}
+.owner .owner-image{
+    margin:5px 25px 5px 25px ;
+}
+.owner .owner-image img{
+    border:2px solid black ; 
+    padding:15px ; 
+    height: 300px ; 
+    width: 300px ;
+}
+.slideleft img , .slideright img{
+    width : 50px ; 
+    height: 50px;
+    margin:10px;
+    cursor:pointer
+}
+.image{
+    height: 100%;
+    width: 100%;
+    transition:1s ;
+}
+.imageslider-display .image img{
+    height: 100%;
+    width: 100%;
+}
+.owner-details input{
+    display:block;
+}
+.property-details{
+    padding:25px 45px 25px 45px ;
+}
+.property-details h1 , .owner-details h1{
+    border-bottom: 3px solid rgb(5, 197, 197) ; 
+    padding:15px; 
+    margin:10px;
+}
+.property-details table td{
+    padding:10px 25px 10px 25px;
+    font-size:25px;
+}
+.submit-btn{
+    display:flex ;
+    justify-content: flex-end;
+}
+.submit-btn input[type = 'submit']{
+    margin-right:15%;
+    margin-top:5% ; 
+    line-height: 20px;
+    padding:10px;
+    font-size:20px;
+    border:2px solid black ; 
+    background-color: black;
+    color:white ;
+    border-radius:10px;
+    transition:0.2s ;
+    cursor:pointer;
+}
+.submit-btn input[type = 'submit']:hover{
+    box-shadow: 3px 3px 16px cyan;
+    color:cyan ;
+    border:2px solid cyan;
+}
+.owner-details form{
+    margin: 10px 25px 25px 25px ;
+    
+}
+@media all and (max-width:780px){
+    .imageslider-display{
+        height:240px ;
+        width:450px;
+    }
+    .property-details table td{
+        font-size:20px;
+    }
+    .submit-btn input[type = 'submit']{
+        font-size:18px;
+    }
+    .slideleft img , .slideright img{
+        width : 30px ; 
+        height: 30px;
+    }
+    .owner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media all and (max-width: 450px){
+    .imageslider-display{
+        height:160px ;
+        width:300px;
+    }
+    .property-details table td{
+        font-size:15px;
+    }
+    .submit-btn input[type = 'submit']{
+        font-size:15px;
+    }
+
+    .slideleft img , .slideright img{
+        width : 20px ; 
+        height: 20px;
+    }
+
+    
+}

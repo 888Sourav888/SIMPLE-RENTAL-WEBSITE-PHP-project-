@@ -1,0 +1,142 @@
+.homepage{
+    background-color:white ;
+    overflow-x: hidden ;
+}
+.homepage-container{
+    height:100vh ;
+}
+.banner1{
+    padding:10px ;
+    background-image: url('../images/busycity.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    background-attachment: fixed;
+    display:flex ; 
+    justify-content: center ;
+    align-items: center;
+}
+.banner1 h1{
+    color: #1b1b1b ; 
+    text-align: center;
+    padding:25px ;  
+    font-family: 'Brush Script MT';
+    font-size:300%; 
+}
+.banner2{
+    display:flex ; 
+    padding:25px ; 
+    border:2px solid white ; 
+}
+.banner2-content{
+    width:100% ; 
+    background-image:linear-gradient( to right , white 70% , #1b1b1b) ; 
+    display:flex  ;
+    justify-content: space-around ; 
+    align-items: center;
+    padding:25px ;
+    margin:5px ;
+}
+.banner2-content img{
+    height: 350px ;
+    width:400px ;
+    padding:25px ; 
+    border:2px solid white ;
+}
+.banner2-content .buttons a{
+    padding:9px 27px 9px 27px ; 
+    color:white ; 
+    text-decoration:none ; 
+    font-weight: bolder;
+    background-color:black ; 
+    cursor : pointer ; 
+    transition:0.2s ; 
+    margin:20px ;
+}
+.banner2-content .buttons a:hover{
+    box-shadow: 2px 2px 16px grey;
+    background-color: white ;
+    border:2px solid black ; 
+    color:black ;
+}
+.banner2-content .buttons{
+    display:flex ; 
+    flex-direction:column ; 
+    align-items:center; 
+}
+.banner3{
+    height: 50%; 
+    padding:25px ; 
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    background-color :#1b1b1bb2;
+    background-image:linear-gradient(to right,#1b1b1b ,white)
+}
+.banner3 a{
+    padding:15px 45px 15px 45px ; 
+    color:white ; 
+    text-decoration:none ; 
+    font-weight: bolder;
+    background-color:rgb(45, 163, 163); 
+    cursor : pointer ; 
+    transition:0.2s ; 
+    font-weight: bolder;
+    color:black ;
+    border:2px solid black;
+    margin:20px ;
+}
+.banner3 a:hover{
+    box-shadow: 2px 2px 16px black;
+    border:3px solid rgb(45, 163, 163); 
+    background-color:white ;
+    color:#1b1b1b ; 
+}
+.banner3 .rent {
+    /* background-color: black ; */
+    background-image: url('../images/rent.jpg');
+    
+}
+.banner3 .list{
+    background-image: url('../images/list.jpg') ; 
+}
+.banner3 .rent ,.banner3 .list {
+      
+    background-size:cover ; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100% ;
+    flex-grow: 1;
+    display:flex ; 
+    justify-content: center;
+    align-items: center;
+}
+.banner3 h2{
+    background-color:rgb(65, 189, 189) ; 
+    color: #1b1b1b; 
+    padding:25px ;
+    text-align:center ;
+}
+
+@media all and (max-width:968px){
+    .banner3{
+        flex-direction: column;
+    }
+    .banner3 .list , .banner3 .rent{
+        width:100% ; 
+        padding:10px ;
+    }
+    .banner1 h1{
+        font-size:200% ; 
+    }
+}
+
+@media all and (max-width:600px ){
+    .banner2-content{
+        flex-direction:column ;
+        background-image: linear-gradient( white 70% , #1b1b1b) ; 
+    }
+    .banner1 h1{
+        font-size:160% ; 
+    }
+}
