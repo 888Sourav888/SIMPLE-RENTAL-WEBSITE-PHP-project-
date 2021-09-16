@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = 'author' content = "SOURAV KUMAR NRS 2020115089"> 
+    <meta name = 'author' content = ""> 
     <meta name = 'keywords' content = 'houses to rent home for rent cheap houses for rent cheap apartments for rent'>
     <meta name = 'description' content = 'Looking for Houses to Rent ?  We got you covered . Rent a house at your desired location at Rent Heaven. Create an account now!'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
